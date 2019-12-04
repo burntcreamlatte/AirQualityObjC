@@ -30,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
+//self note -- more of a mark or extension; does not need to be outside the first body of class; more for organization
 @interface ARCityAirQuality (JSONConvertable)
 
 -(instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;

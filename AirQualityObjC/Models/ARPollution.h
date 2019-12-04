@@ -12,6 +12,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ARPollution : NSObject
 
+@property (nonatomic, readonly) NSInteger airQualityIndex;
+
+-(instancetype)initWithInt:(NSInteger)aqi;
+
+@end
+
+
+@interface ARPollution (JSONConvertable)
+
+-(instancetype)initWithDictionary:(NSDictionary<NSString *,id> *)dictionary;
+
 @end
 
 NS_ASSUME_NONNULL_END

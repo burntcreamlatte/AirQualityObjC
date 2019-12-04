@@ -14,8 +14,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 //self note -- keep in mind: no pointers needed for primitives
 @property (nonatomic, readonly) NSInteger temperature;
+@property (nonatomic, readonly) NSInteger humidity;
+@property (nonatomic, readonly) NSInteger windSpeed;
+
+-(instancetype)initWithWeatherInfo:(NSInteger)temperature
+                          humidity:(NSInteger)humidity
+                         windSpeed:(NSInteger)windSpeed;
+
+@end
 
 
+@interface ARWeather (JSONConvertable)
+
+-(instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 
 @end
 
