@@ -61,19 +61,59 @@
 		ABFF167A2398419100514EFB /* AirQualityObjC */ = {
 			isa = PBXGroup;
 			children = (
+				ABFF1697239841BE00514EFB /* Views */,
+				ABFF1696239841B900514EFB /* Controllers */,
+				ABFF1695239841B500514EFB /* Models */,
+				ABFF1694239841AD00514EFB /* Resources */,
+			);
+			path = AirQualityObjC;
+			sourceTree = "<group>";
+		};
+		ABFF1694239841AD00514EFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				ABFF167B2398419100514EFB /* AppDelegate.h */,
 				ABFF167C2398419100514EFB /* AppDelegate.m */,
 				ABFF167E2398419100514EFB /* SceneDelegate.h */,
 				ABFF167F2398419100514EFB /* SceneDelegate.m */,
 				ABFF16812398419100514EFB /* ViewController.h */,
 				ABFF16822398419100514EFB /* ViewController.m */,
-				ABFF16842398419100514EFB /* Main.storyboard */,
 				ABFF16872398419300514EFB /* Assets.xcassets */,
-				ABFF16892398419300514EFB /* LaunchScreen.storyboard */,
 				ABFF168C2398419300514EFB /* Info.plist */,
 				ABFF168D2398419300514EFB /* main.m */,
 			);
-			path = AirQualityObjC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABFF1695239841B500514EFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABFF1696239841B900514EFB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ABFF1697239841BE00514EFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ABFF1698239841C900514EFB /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ABFF1698239841C900514EFB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ABFF16842398419100514EFB /* Main.storyboard */,
+				ABFF16892398419300514EFB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y2XBHVDM;
-				INFOPLIST_FILE = AirQualityObjC/Info.plist;
+				INFOPLIST_FILE = AirQualityObjC/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y2XBHVDM;
-				INFOPLIST_FILE = AirQualityObjC/Info.plist;
+				INFOPLIST_FILE = AirQualityObjC/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
