@@ -17,9 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSInteger humidity;
 @property (nonatomic, readonly) NSInteger windSpeed;
 
--(instancetype)initWithWeatherInfo:(NSInteger)temperature
-                          humidity:(NSInteger)humidity
-                         windSpeed:(NSInteger)windSpeed;
+-(instancetype)initWithWeatherInfo:(NSInteger)temperature //tp
+                          humidity:(NSInteger)humidity //hu
+                         windSpeed:(NSInteger)windSpeed; //ws
 
 @end
 

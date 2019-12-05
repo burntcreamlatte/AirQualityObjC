@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) NSInteger airQualityIndex;
 
--(instancetype)initWithInt:(NSInteger)aqi;
+-(instancetype)initWithInt:(NSInteger)aqi; //aqius
 
 @end
 

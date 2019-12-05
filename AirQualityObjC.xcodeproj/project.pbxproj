@@ -17,6 +17,11 @@
 		ABFF169E23984AD600514EFB /* ARCityAirQuality.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFF169D23984AD600514EFB /* ARCityAirQuality.m */; };
 		ABFF16A123984AE100514EFB /* ARWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFF16A023984AE100514EFB /* ARWeather.m */; };
 		ABFF16A423984AF100514EFB /* ARPollution.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFF16A323984AF100514EFB /* ARPollution.m */; };
+		ABFF16AA23985CAF00514EFB /* ARCityAirQualityController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFF16A923985CAF00514EFB /* ARCityAirQualityController.m */; };
+		ABFF16BB23987BF700514EFB /* CountriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF16BA23987BF700514EFB /* CountriesListViewController.swift */; };
+		ABFF16BD23987C0200514EFB /* StatesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF16BC23987C0200514EFB /* StatesListViewController.swift */; };
+		ABFF16C123987DC900514EFB /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF16C023987DC900514EFB /* CityViewController.swift */; };
+		ABFF16C323987E0D00514EFB /* CitiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF16C223987E0D00514EFB /* CitiesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,13 @@
 		ABFF16A023984AE100514EFB /* ARWeather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARWeather.m; sourceTree = "<group>"; };
 		ABFF16A223984AF100514EFB /* ARPollution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARPollution.h; sourceTree = "<group>"; };
 		ABFF16A323984AF100514EFB /* ARPollution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARPollution.m; sourceTree = "<group>"; };
+		ABFF16A823985CAF00514EFB /* ARCityAirQualityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCityAirQualityController.h; sourceTree = "<group>"; };
+		ABFF16A923985CAF00514EFB /* ARCityAirQualityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCityAirQualityController.m; sourceTree = "<group>"; };
+		ABFF16B723987A1D00514EFB /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		ABFF16BA23987BF700514EFB /* CountriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewController.swift; sourceTree = "<group>"; };
+		ABFF16BC23987C0200514EFB /* StatesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesListViewController.swift; sourceTree = "<group>"; };
+		ABFF16C023987DC900514EFB /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		ABFF16C223987E0D00514EFB /* CitiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,7 @@
 				ABFF16872398419300514EFB /* Assets.xcassets */,
 				ABFF168C2398419300514EFB /* Info.plist */,
 				ABFF168D2398419300514EFB /* main.m */,
+				ABFF16B723987A1D00514EFB /* Bridging-Header.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -110,6 +123,8 @@
 		ABFF1696239841B900514EFB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ABFF16A723985A6F00514EFB /* View Controllers */,
+				ABFF16A623985A6500514EFB /* Model Controllers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -129,6 +144,26 @@
 				ABFF16892398419300514EFB /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ABFF16A623985A6500514EFB /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ABFF16A823985CAF00514EFB /* ARCityAirQualityController.h */,
+				ABFF16A923985CAF00514EFB /* ARCityAirQualityController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		ABFF16A723985A6F00514EFB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ABFF16BA23987BF700514EFB /* CountriesListViewController.swift */,
+				ABFF16BC23987C0200514EFB /* StatesListViewController.swift */,
+				ABFF16C223987E0D00514EFB /* CitiesListViewController.swift */,
+				ABFF16C023987DC900514EFB /* CityViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +198,7 @@
 				TargetAttributes = {
 					ABFF16772398419100514EFB = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -206,9 +242,14 @@
 				ABFF16A123984AE100514EFB /* ARWeather.m in Sources */,
 				ABFF16A423984AF100514EFB /* ARPollution.m in Sources */,
 				ABFF16832398419100514EFB /* ViewController.m in Sources */,
+				ABFF16BB23987BF700514EFB /* CountriesListViewController.swift in Sources */,
+				ABFF16C323987E0D00514EFB /* CitiesListViewController.swift in Sources */,
+				ABFF16AA23985CAF00514EFB /* ARCityAirQualityController.m in Sources */,
+				ABFF16BD23987C0200514EFB /* StatesListViewController.swift in Sources */,
 				ABFF167D2398419100514EFB /* AppDelegate.m in Sources */,
 				ABFF168E2398419300514EFB /* main.m in Sources */,
 				ABFF16802398419100514EFB /* SceneDelegate.m in Sources */,
+				ABFF16C123987DC900514EFB /* CityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y2XBHVDM;
 				INFOPLIST_FILE = AirQualityObjC/Resources/Info.plist;
@@ -357,6 +399,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shackelford.AirQualityObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AirQualityObjC/Resources/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -365,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y2XBHVDM;
 				INFOPLIST_FILE = AirQualityObjC/Resources/Info.plist;
@@ -374,6 +420,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shackelford.AirQualityObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AirQualityObjC/Resources/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
