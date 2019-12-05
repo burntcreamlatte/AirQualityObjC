@@ -43,10 +43,10 @@ class CityViewController: UIViewController {
             self.cityLabel.text = conditions.city
             self.stateLabel.text = conditions.state
             self.countryLabel.text = conditions.country
-            self.tempLabel.text = "\(conditions.weather.temperature)"
-            self.humidityLabel.text = "\(conditions.weather.humidity)"
-            self.aqiLabel.text = "\(conditions.pollution.airQualityIndex)"
-            self.windSpeedLabel.text = "\(conditions.weather.windSpeed)"
+            self.tempLabel.text = "Temp: \(conditions.weather.temperature) degrees"
+            self.humidityLabel.text = "Humidity: \(conditions.weather.humidity)%"
+            self.aqiLabel.text = "AQI: \(conditions.pollution.airQualityIndex)"
+            self.windSpeedLabel.text = "Wind Speed: \(conditions.weather.windSpeed)mph"
         }
     }
 }

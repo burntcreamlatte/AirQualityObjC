@@ -166,7 +166,7 @@ NSString *const apiKey = @"de01d2be-add7-4a67-9157-f2312ed3ead8";
     }] resume];
     
 }
-+(void)fetchDataForCity:(NSString *)city state:(NSString *)state country:(NSString *)country completion:(void (^)(NSArray<NSString *> * _Nullable))completion
++(void)fetchDataForCity:(NSString *)city state:(NSString *)state country:(NSString *)country completion:(void (^)(ARCityAirQuality * _Nullable))completion
 {
     NSURL *baseURL = [NSURL URLWithString:baseURLString];
     NSURL *versionURL = [baseURL URLByAppendingPathComponent:versionComponent];
